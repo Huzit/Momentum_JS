@@ -5,7 +5,8 @@ const clockContainer = document.querySelector(".js-clock"), //querySelector는 d
   //반면 내부 value일경우 그냥 써주면 된다
 
   //시간을 보여주는 함수
-function getTime(){
+function getTime()
+{
     const date = new Date(); //Date객체를 생성
     const minute = date.getMinutes(); 
     const hours = date.getHours();
@@ -16,7 +17,9 @@ function getTime(){
   
     clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours} : ${minute < 10 ? `0${minute}` : minute} : ${second < 10 ? `0${second}` : second}`
 }
-function init(){
+
+function init()
+{
     getTime();
     setInterval(getTime, 1000); //android 할 때도 써봤었지만 반복실행시켜주는 함수다 첫 번째 인수는 반복실행할 함수, 두번째는 밀리초단위 주기이다
 }
