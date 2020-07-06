@@ -1,7 +1,8 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
     toDoInput = toDoForm.querySelector("input"),
     toDoList = document.querySelector(".js-toDoList"); //목록을 만드는 ul tag의 class이다
-    const TODOS_LS = 'toDos'; // 비유하면 User
+const TODOS_LS = 'toDos'; // 비유하면 User
+
 
     let toDos = []; //해야할 일의 array
 
@@ -30,7 +31,11 @@ function paintTodo(text)
     const span = document.createElement("span") //inline에서 내용을 출력해준다.
     const newId = toDos.length+1;
 
-    delBtn.innerText = "❌" //만약 이모지가 안될경우 charset문제
+    
+    delBtn.innerText = '❌' //만약 이모지가 안될경우 charset문제
+    delBtn.style.border = 'none';
+    delBtn.style.background = 'none';
+    delBtn.style.outline = 'none';
     delBtn.addEventListener("click", deleteTodo);
     span.innerText = text;
 

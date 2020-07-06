@@ -7,19 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="js-weather weather"></div>
     <div class="js-clock">
         <h1>00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?">
+    
+    <form class="js-form formContainer">
+        <input class="form" type="text" placeholder="What is your name?">
     </form>
+    
     <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm toDoForm">
-        <input type="text" placeholder="write a to do"/> 
+
+    <form class="js-toDoForm toDoFormContainer">
+        <input class="toDoForm" type="text" placeholder="write a to do"/> 
     </form>
     <ul class="js-toDoList toDoList">        
     </ul>
-    <spanc class="js-weather"></spanc>
+    
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
